@@ -84,3 +84,56 @@ a[href="#design"] {
 
 
 /* Hieronder komen jouw animaties en stijlen */
+
+/* Frontend */
+ a[href="#frontend"] {
+
+ }
+ 
+.frontend{
+  animation-name: scaleup;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes scaleup {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(2);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+
+}
+
+
+/* & */
+
+a[href="#and"] {
+
+}
+
+.and{
+animation-name: left;
+animation-duration: 0.5s;
+animation-iteration-count: 2;
+}
+
+@keyframes left {
+0% { 
+}
+
+50% { 
+   transform: translateX(-50px);
+}
+
+100% {
+}
+
+}

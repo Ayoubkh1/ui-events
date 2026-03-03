@@ -20,16 +20,42 @@ function jumpHandler() {
 designLink.addEventListener('animationend', jumpHandler)
 
 
-
+// Frontend 
 
 // Ga zelf verder met de overige elementen, aan de hand van de instructies
 // Maak bijvoorbeeld een scale animatie als je op de Frontend link klikt
 
 // Stap 1: querySelector
-// let scaleLink = document.querySelector...
+const scaleLink = document.querySelector('a[href="#frontend"]');
 
 // Stap 2: addEventListener
-// scaleLink.addEventListener...
+scaleLink.addEventListener("click", function () {
+  
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  scaleLink.classList.add("frontend");
+});
 
-// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-// scaleLink.classList.toggle...
+// Verwijderd het Animatie event zodra de animatie is afgelopen
+scaleLink.addEventListener("animationend", function () {
+
+  scaleLink.classList.remove("frontend");
+});
+
+// & 
+
+// Stap 1: querySelector
+const AndLink = document.querySelector('a[href="#and"]');
+
+// Stap 2: addEventListener
+AndLink.addEventListener("click", function () {
+ 
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  AndLink.classList.add("and");
+
+});
+
+// Verwijderd het Animatie event zodra de animatie is afgelopen
+AndLink.addEventListener("animationend", function () {
+  AndLink.classList.remove("and");
+
+});
