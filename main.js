@@ -59,3 +59,23 @@ AndLink.addEventListener("animationend", function () {
   AndLink.classList.remove("and");
 
 });
+
+// Development 
+
+
+// Stap 1: querySelector
+const developmentLink = document.querySelector('a[href="#development"]')
+
+// Stap 2: addEventListener
+developmentLink.addEventListener('dblclick', function() {
+
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  developmentLink.classList.add('wobble');
+
+});
+
+// Verwijderd het Animatie event zodra de animatie is afgelopen
+developmentLink.addEventListener("animationend", function () {
+  developmentLink.classList.remove("wobble");
+
+});
