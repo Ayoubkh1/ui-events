@@ -79,3 +79,17 @@ developmentLink.addEventListener("animationend", function () {
   developmentLink.classList.remove("wobble");
 
 });
+
+// Sprint-5  
+
+// Stap 1: querySelector
+const sprint5link = document.querySelector('a[href="#sprint-5"]')
+
+// Stap 2: addEventListene
+sprint5link.addEventListener('focus', sprint5)
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function sprint5() {
+  sprint5link.classList.add('sprint5colors')
+}
+
